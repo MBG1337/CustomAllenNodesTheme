@@ -13,7 +13,7 @@ clear
 installTheme(){
     cd /var/www/
     tar -cvf McubeTheme.tar.gz pterodactyl
-    echo "Installing MineCube Official Theme...Please wait..."
+    echo "Installing Custom AllenNodes Theme"
     cd /var/www/pterodactyl
     rm -rf McubeTheme
     git clone https://github.com/MBG-Codes-You/McubeTheme.git
@@ -38,7 +38,7 @@ installTheme(){
     yarn build:production
     sudo php artisan optimize:clear
     clear
-    echo "(っ◔◡◔)っ ♥ Thank you for installing the theme ♥"
+    echo "(っ◔◡◔)っ ♥ Thank you for installing the theme | By MBG#1337 ♥"
 }
 
 installThemeQuestion(){
