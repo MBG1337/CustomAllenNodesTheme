@@ -16,7 +16,7 @@ installTheme(){
     echo "Installing Custom AllenNodes Theme"
     cd /var/www/pterodactyl
     rm -rf McubeTheme
-    git clone https://github.com/MBG-Codes-You/McubeTheme.git
+    git clone https://github.com/MBG1337/CustomAllenNodesTheme.git
     cd McubeTheme
     rm /var/www/pterodactyl/resources/scripts/MineCube.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
@@ -53,7 +53,7 @@ installThemeQuestion(){
 }
 
 repair(){
-    bash <(curl https://raw.githubusercontent.com/MBG-Codes-You/McubeTheme/main/repair.sh)
+    bash <(curl https://raw.githubusercontent.com/MBG1337/CustomAllenNodesTheme/main/repair.sh)
 }
 
 restoreBackUp(){
