@@ -15,9 +15,9 @@ installTheme(){
     tar -cvf McubeTheme.tar.gz pterodactyl
     echo "Installing Custom AllenNodes Theme"
     cd /var/www/pterodactyl
-    rm -rf McubeTheme
+    rm -rf CustomAllenNodesTheme
     git clone https://github.com/MBG1337/CustomAllenNodesTheme.git
-    cd McubeTheme
+    cd CustomAllenNodesTheme
     rm /var/www/pterodactyl/resources/scripts/MineCube.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     rm /var/www/pterodactyl/resources/scripts/components/server/console/Console.tsx
@@ -59,8 +59,8 @@ repair(){
 restoreBackUp(){
     echo "Restoring backup...Sorry for the Issues caused."
     cd /var/www/
-    tar -xvf McubeTheme.tar.gz
-    rm McubeTheme.tar.gz
+    tar -xvf AllenNodes.tar.gz
+    rm AllenNodes.tar.gz
 
     cd /var/www/pterodactyl
     yarn build:production
